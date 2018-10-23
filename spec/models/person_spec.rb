@@ -3,8 +3,6 @@ require "spec_helper"
 describe Person do
   describe ".order_by_location_name" do
     it "groups people by location" do
-      pending "Fix this spec first"
-
       locations = [
         create(:location, name: "location1"),
         create(:location, name: "location3"),
@@ -23,8 +21,6 @@ describe Person do
 
   describe ".with_employees" do
     it "finds people who manage employees" do
-      pending "Fix this spec second"
-
       managers = [
         create(:person, name: "manager-one"),
         create(:person, name: "manager-two")
@@ -43,8 +39,6 @@ describe Person do
 
   describe ".with_employees_order_by_location_name" do
     it "finds managers ordered by location name" do
-      pending "Fix this spec last"
-
       locations = [
         create(:location, name: "location1"),
         create(:location, name: "location3"),
